@@ -1,0 +1,16 @@
+.CourseName
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 50px;
+    margin-top: 10px;
+}
+.ng-invalid.ng-touched
+{
+    border-color: red;
+}
+.error-block
+{
+    color: red;
+}

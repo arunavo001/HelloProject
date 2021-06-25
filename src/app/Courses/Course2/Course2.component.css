@@ -1,0 +1,10 @@
+.row
+{
+    text-align: center;
+    height: 100px;
+}
+.buttons
+{
+    padding: 5px;
+    position:inherit;   
+}

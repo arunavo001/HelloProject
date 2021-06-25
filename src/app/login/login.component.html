@@ -1,3 +1,4 @@
+<app-Nav-bar></app-Nav-bar>
 <mat-card>
   <mat-card-content>
     <div class="header">
@@ -14,10 +15,9 @@
           />
           <mat-error *ngIf="!loginForm.controls['username'].valid">
               Username is required
-            </mat-error>
+          </mat-error>
         </mat-form-field>
       </div>
-
       <div>
         <mat-form-field class="full-width" appearance="outline">
           <mat-label>Password</mat-label>
@@ -33,8 +33,9 @@
         </mat-error>
       </mat-form-field>
       </div>
-      <button mat-flat-button color="primary">Login</button>
-      <button mat-flat-button color="primary">Reset</button>
+      <button mat-flat-button color="primary"[disabled]="!loginForm.valid" routerLink="/dashboard">Login</button>
+      <input type="reset" value="Reset" class="inputReset">
+      <button mat-flat-button color="primary" routerLink="/skip">Skip Login</button>
     </form>
   </mat-card-content>
 </mat-card>

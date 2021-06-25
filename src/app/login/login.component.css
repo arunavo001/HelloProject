@@ -24,3 +24,9 @@ mat-card {
     background :#1b6ca8;
     display: block;
   }
+  .inputReset
+  {
+    background-color: #1b6ca8;
+    padding: 6px;
+    margin-left:5px ;
+  }

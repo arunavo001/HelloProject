@@ -1,0 +1,48 @@
+<div class="CourseName">
+  {{CourseName}}
+</div>
+<div class="card">
+  <div class="card-body">
+    <form (ngSubmit)='onSubmit(Form)' #Form="ngForm">
+      <div class="form-group col-12">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" #firstName="ngModel" ngModel name="firstName" required placeholder="Enter Your First Name">
+        <span *ngIf="!firstName.valid && firstName.touched " class="error-block">Please Provide First Name</span>
+      </div>
+      <div class="form-group col-12">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" #lastName="ngModel" ngModel name="lastName" required placeholder="Enter your Last Name">
+        <span *ngIf="!lastName.valid && lastName.touched" class="error-block">Please Provide Last Name</span>
+      </div>
+      <div class="form-group col-12">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" #email="ngModel" ngModel name="email" required placeholder="Enter Your E-mail">
+        <span *ngIf="!email.valid && email.touched" class="error-block">Please Provide Proper Email</span>
+      </div>
+      <div class="form-group col-12">
+        <label for="mobileNo">Mobile No</label>
+        <input type="number" class="form-control" #mobileNo="ngModel" ngModel name="mobileNo" required placeholder="Enter Your Mobile No">
+        <span *ngIf="!mobileNo.valid && mobileNo.touched" class="error-block">Please Provide Valid Number</span>
+      </div>
+      <div class="form-group col-12">
+        <p style="font-size: large;">Gender</p>
+        <input type="radio" id="male" name="fav_language" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="fav_language" value="Female">
+        <label for="Female">Female</label>
+      </div>
+      <div class="form-group col-12">
+        <label for="occupation">Occupation :</label>
+        <select name="occupation" id="occupation">
+          <option value="Student">Student</option>
+          <option value="Service">Service</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+      <div class="form-group col-12">
+        <button [disabled]="!Form.valid" type="submit" class="btn btn-primary mr-2">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+      </div>
+    </form>
+  </div>
+</div>

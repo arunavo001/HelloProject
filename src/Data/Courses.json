@@ -1,0 +1,42 @@
+[
+    {
+    "CourseId":1,
+    "CourseName":"IT Engineering"
+  },
+  {
+    "CourseId":2,
+    "CourseName":"Computer Science and Engineering"
+  },
+  {
+    "CourseId":3,
+    "CourseName":"Mechanical Engineering"
+  },
+  {
+    "CourseId":4,
+    "CourseName":"Electrical Engineering"
+  },
+  {
+    "CourseId":5,
+    "CourseName":" Business Process Management"
+  },
+  {
+    "CourseId":6,
+    "CourseName":"Accounting Management"
+  },
+  {
+    "CourseId":7,
+    "CourseName":"Administrative Management"
+  },
+  {
+    "CourseId":8,
+    "CourseName":"Association Management"
+  },
+  {
+    "CourseId":9,
+    "CourseName":"Bio-Technology Management"
+  },
+  {
+    "CourseId":10,
+    "CourseName":"Brand Management"
+  }
+]
